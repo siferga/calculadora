@@ -13,6 +13,7 @@ function App() {
     setInput(input + val);
   };
 
+
   return (
     <div className='App'>
       <div className='freecodecamp-logo-container'>
@@ -24,28 +25,28 @@ function App() {
       <div className='calculator-container'>
         <Screen input={input}/>
         <div className='line'>
-          <Button>1</Button>
-          <Button>2</Button>
-          <Button>3</Button>
-          <Button>+</Button>
+          <Button controlClick={addInput}>1</Button>
+          <Button controlClick={addInput}>2</Button>
+          <Button controlClick={addInput}>3</Button>
+          <Button controlClick={addInput}>+</Button>
         </div>
         <div className='line'>
-          <Button>4</Button>
-          <Button>5</Button>
-          <Button>6</Button>
-          <Button>-</Button>
+          <Button controlClick={addInput}>4</Button>
+          <Button controlClick={addInput}>5</Button>
+          <Button controlClick={addInput}>6</Button>
+          <Button controlClick={addInput}>-</Button>
         </div>
         <div className='line'>
-          <Button>7</Button>
-          <Button>8</Button>
-          <Button>9</Button>
-          <Button>*</Button>
+          <Button controlClick={addInput}>7</Button>
+          <Button controlClick={addInput}>8</Button>
+          <Button controlClick={addInput}>9</Button>
+          <Button controlClick={addInput}>*</Button>
         </div>
         <div className='line'>
-          <Button>=</Button>
-          <Button>0</Button>
-          <Button>.</Button>
-          <Button>/</Button>
+          <Button controlClick={addInput}>=</Button>
+          <Button controlClick={addInput}>0</Button>
+          <Button controlClick={addInput}>.</Button>
+          <Button controlClick={addInput}>/</Button>
         </div>
         <div className='line'>
           <ButtonClear>Clear</ButtonClear>
