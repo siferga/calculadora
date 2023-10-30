@@ -54,7 +54,7 @@ function App() {
           <Button controlClick={calculateResult}>=</Button>
           <Button controlClick={addInput}>0</Button>
           <Button controlClick={addInput}>.</Button>
-          <Button controlClick={addInput}>/</Button>
+          <Button controlClicK={addInput}>/</Button>
         </div>
         <div className='line'>
           <ButtonClear controlClear={() => setInput('')}>
